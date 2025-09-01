@@ -54,39 +54,40 @@
                     <textarea name="mensagem" placeholder="DIGITE SUA MENSAGEM AQUI" class="fordform"
                         required></textarea>
 
-                    <div class="lgpd-group">
-                        <p>Os dados serão mantidos em nossa base de dados, só enquanto for desejado por
-                         você. A
-                          qualquer momento, será possível editar ou remover tais dados.</p>
+                    <div class="lgpd-checkbox">
+                        <p>Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A
+                            qualquer momento, será possível editar ou remover tais dados.</p>
 
-                        <div class="checkbox-group">
-                        <input type="checkbox" id="termosCheckbox">
-                        <label for="termosChecbox">Sim. Li e concordo com com os <a href="https://www.ford.com.br/politica-de-privacidade/">Termos e condições</a>.</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="termosCheckbox" onchange="validarEnvio()">
+                        <label for="termosChecbox">Sim. Li e concordo com os <a 
+                               href="https://www.ford.com.br/politica-de-privacidade/">Termos e 
+                               condições</a>.</label>
                     </div>
-                    <div class="checkbox" id="newletterCheckbox">Sim. Também quero receber descontos e novidades.
-                        </label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletterCheckbox">  
+                        <label for="newsletterCheckbox">Sim. Também quero receber descontos e novidades.</label>
                     </div>
-
                 </div>
                     
-                    <button type="submit" id="enviarBtn">Enviar</button>
-                </form>
-            </div>
+                <button type="submit" id="enviarBtn">Enviar</button>
+            </form>
         </div>
-    </main>
-    <footer>
-        <nav id="social">
-            <ul>
-                <li><span class="redesociais">Redes Sociais</span></li>
-                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
-                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
-                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
-            </ul>
-        </nav>
-        <div>
-            <img src="img/ford-96.png" width="70" />
-        </div>
-    </footer>
+    </div>
+</main>
+<footer>
+    <nav id="social">
+        <ul>
+            <li><span class="redesociais">Redes Sociais</span></li>
+            <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
+            <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
+            <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
+        </ul>
+    </nav>
+    <div>
+        <img src="img/ford-96.png" width="70" />
+    </div>
+</footer>
 </body>
 
 </html>
